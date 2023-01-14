@@ -51,6 +51,7 @@ ul li{
 
 }
 
+/*---Player detiles-----*/
 
 .top-players{
     display: grid;
@@ -58,7 +59,6 @@ ul li{
     grid-row-gap:40px;
     margin-left: 50px;
 }
-/*---Player detiles-----*/
 
 .player{
     display: flex;
@@ -135,11 +135,24 @@ ul li{
     background-color: #ffffffd0;
     border-radius: 10px;
 }
+
+/*--
+
 .last-main-div{
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
+*/
+.last-main-div{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-left: 30px;
+}
+
+
+
+
 .course-bacground{
     background-color: #e4e1e1b6;
     border-radius: 10px;
@@ -185,7 +198,59 @@ ul li{
 }
 
 .clock{
-    background-color:  #ff4a5fc7;
+    background-color:  #ff4a5f8e;
     border-radius: 4px;
 
 }
+
+/*------------------
+    Mobile size    
+    --------------*/
+
+    @media screen and (max-width:667px) {
+        .continar{
+        display:flex;
+       justify-content: right;
+        width: 580px;
+        }
+  /*--Main-page----*/
+
+        .section{
+            height:auto;
+            width: 420px;
+            margin-left: 80px;
+            
+        }
+
+        .top-players{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        /*-- Bolog-section--*/
+
+        .main-bolog{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        /*--lates-course--*/
+
+       .last-main-div{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    
+       }
+       .lates-course{
+        width: 420px;
+        margin-left:25px ;
+        height: 1000px;
+        margin-left: 80px;
+        
+       }
+       .course-bacground{
+        margin-top: 30px;
+       }
+    
+        
+    }
